@@ -1,0 +1,40 @@
+<odoo>
+    <record id="property_view_tree" model="ir.ui.view">
+            <field name="name">property tree</field>
+            <field name="model">property</field>
+            <field name="arch" type="xml">
+        <tree class="header_custom">
+             <field name="name"/>
+             <field name="postcode"/>
+             <field name="owner_id"/>
+             <field name="date_availability"/>
+             <field name="selling_price"/>
+             <field name="garden"/>
+             <field name="facades"/>
+             <field name="postcode"/>
+             <field name="garden_area"/>
+             <field name="state"/>
+             <field name="bedrooms" optional="1"/>
+             <field name="garage" optional="1"/>
+        </tree>
+            </field>
+   </record>
+
+    <record id="view_partner_form_inherit" model="ir.ui.view">
+            <field name="name">view partner form</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref ="base.view_partner_form"/>
+            <field name="arch" type="xml">
+                <field name="vat" position="after">
+                    <field name="property_id"/>
+                    <field name="price"/>
+        </field>
+<!--        <xpath expr="//field[@name='partner_id']" position="after">-->
+<!--            <field name="property_id"/>-->
+<!--        </xpath>-->
+        </field>
+   </record>
+
+</odoo>
+
+
