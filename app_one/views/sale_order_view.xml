@@ -1,24 +1,24 @@
 <odoo>
-    <record id="property_view_tree" model="ir.ui.view">
-            <field name="name">property tree</field>
-            <field name="model">property</field>
-            <field name="arch" type="xml">
-        <tree class="header_custom">
-             <field name="name"/>
-             <field name="postcode"/>
-             <field name="owner_id"/>
-             <field name="date_availability"/>
-             <field name="selling_price"/>
-             <field name="garden"/>
-             <field name="facades"/>
-             <field name="postcode"/>
-             <field name="garden_area"/>
-             <field name="state"/>
-             <field name="bedrooms" optional="1"/>
-             <field name="garage" optional="1"/>
-        </tree>
-            </field>
-   </record>
+<!--    <record id="property_view_tree" model="ir.ui.view">-->
+<!--            <field name="name">property tree</field>-->
+<!--            <field name="model">property</field>-->
+<!--            <field name="arch" type="xml">-->
+<!--        <tree class="header_custom">-->
+<!--             <field name="name"/>-->
+<!--             <field name="postcode"/>-->
+<!--             <field name="owner_id"/>-->
+<!--             <field name="date_availability"/>-->
+<!--             <field name="selling_price"/>-->
+<!--             <field name="garden"/>-->
+<!--             <field name="facades"/>-->
+<!--             <field name="postcode"/>-->
+<!--             <field name="garden_area"/>-->
+<!--             <field name="state"/>-->
+<!--             <field name="bedrooms" optional="1"/>-->
+<!--             <field name="garage" optional="1"/>-->
+<!--        </tree>-->
+<!--            </field>-->
+<!--   </record>-->
 
     <record id="view_order_form_inherit" model="ir.ui.view">
             <field name="name">view order form</field>
