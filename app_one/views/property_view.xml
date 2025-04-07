@@ -7,8 +7,7 @@
                 <field name="name"/>
                 <field name="active"/>
                 <field name="postcode"/>
-<!--                <field name="is_late" column_invisible="True"/>-->
-                <field name="is_late"/>
+                <field name="is_late" column_invisible="True"/>
                 <field name="owner_id"/>
                 <field name="date_availability"/>
                 <field name="selling_price"/>
@@ -51,7 +50,7 @@
                         <group string="General info.">
                             <field name="date_availability" required="1"/>
                             <field name="expected_selling_date"/>
-                            <field name="is_late"/>
+                            <field name="is_late" invisible="1"/>
                             <field name="postcode"/>
                             <field name="expected_price"/>
                             <field name="selling_price"/>
